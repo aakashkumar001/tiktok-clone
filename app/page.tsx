@@ -9,8 +9,6 @@ import PostMain from "./components/PostMain"
 export default function Home() {
   let { allPosts, setAllPosts } = usePostStore();
   useEffect(() => { setAllPosts()}, [])
-
-  
   return (
     <>
       <MainLayout>
@@ -25,3 +23,4 @@ export default function Home() {
     </>
   )
 }
+

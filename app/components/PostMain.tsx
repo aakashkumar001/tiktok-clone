@@ -23,8 +23,6 @@ export default function PostMain({ post }: PostMainCompTypes) {
         }
     }, [])
 
-    
-
     return (
         <>
             <div id={`PostMain-${post.id}`} className="flex border-b py-6">
@@ -60,8 +58,8 @@ export default function PostMain({ post }: PostMainCompTypes) {
                             <video 
                                 id={`video-${post.id}`}
                                 loop
-                                autoPlay
                                 controls
+                                muted
                                 className="rounded-xl object-cover mx-auto h-full" 
                                 src={useCreateBucketUrl(post?.video_url)}
                             />

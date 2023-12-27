@@ -6,8 +6,6 @@ const useCreateBucketUrl = (fileId: string) => {
 
     if (!url || !id || !endpoint || !fileId) return ''
 
-    console.log(`${url}/storage/buckets/${id}/files/${fileId}/view?project=${endpoint}`)
-
     return `${url}/storage/buckets/${id}/files/${fileId}/view?project=${endpoint}`
 }
 
